@@ -62,7 +62,7 @@ cleanup
 echobold 'test case 4'
 $XCADDY run -config test/Caddyfile.4&
 pid="$!"
-retry '/sjtug/caddy2-filter/master/test/test-4.input' '--compressed' > output4
+retry '/jamison-phillips/caddy2-filter/master/test/test-4.input' '--compressed' > output4
 diff output4 test/test-4.ref
 cleanup
 
